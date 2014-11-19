@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Dota2ArenaCourier::VERSION
   spec.authors       = ["sebyx07"]
   spec.email         = ["gore.sebyx@yahoo.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Dota2 match/history parser}
+  spec.description   = %q{Dota2 match/history parser}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency 'typhoeus'
+  spec.add_runtime_dependency 'gem_config'
+  spec.add_development_dependency 'rspec'
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
 end
