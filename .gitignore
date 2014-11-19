@@ -1,5 +1,5 @@
 /.bundle/
-/.idea/
+.idea/workspace.xml
 /.yardoc
 /Gemfile.lock
 /_yardoc/
