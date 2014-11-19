@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["gore.sebyx@yahoo.com"]
   spec.summary       = %q{Dota2 match/history parser}
   spec.description   = %q{Dota2 match/history parser}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/sebyx07/dota2arena_courier"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
