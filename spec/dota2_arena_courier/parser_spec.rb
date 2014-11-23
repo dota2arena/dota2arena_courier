@@ -25,6 +25,11 @@ describe Dota2ArenaCourier do
         expect(result[0].dire.win).to be false
         expect(result[0].dire.players.size).to eq 5
       end
+
+      it 'dire team has kills' do
+        result = parser.parse_matches_json([json])
+        expect(result[0].dire.kills).to eq 27
+      end
     end
   end
   describe 'history' do

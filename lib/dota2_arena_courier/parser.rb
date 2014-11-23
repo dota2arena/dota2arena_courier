@@ -22,8 +22,8 @@ class Dota2ArenaCourier::Parser
           radiant_team = radiant_players.map{|p| Dota2ArenaCourier::Player.new(p).set_attributes}
           dire_team = dire_players.map{|p| Dota2ArenaCourier::Player.new(p).set_attributes}
 
-          dire = Dota2ArenaCourier::Team.new(dire_team, match.radiant_win)
-          radiant = Dota2ArenaCourier::Team.new(radiant_team, match.radiant_win)
+          dire = Dota2ArenaCourier::Team.new(dire_team, match.radiant_win).set_attributes
+          radiant = Dota2ArenaCourier::Team.new(radiant_team, match.radiant_win).set_attributes
 
           ResultMatch.new(match, radiant, dire)
         rescue
