@@ -64,5 +64,55 @@ history_1 = Dota2ArenaCourier.get_player_history_full('account_id', {all: true})
 ```
 
 
+###Match attributes
+```ruby
+radiant_win
+duration
+start_time
+match_id
+cluster
+lobby_type
+human_players
+game_mode
+```
+
+###Team attributes
+```ruby
+win
+players
+kills
+deaths
+assists
+xpm
+gpm
+net_worth
+last_hits
+denies
+lvl_ups # [{:players=>5, :sum=>1752}, ...] sum is the time when players reached the level
+# levels selected are 3 and multiply of 3
+level
+```
+
+###Player attributes
+```ruby
+account_id
+hero_id
+items #also of sylla
+kills
+deaths
+assists
+leaver_status
+net_worth
+last_hits
+denies
+gpm
+xpm
+level
+lvl_ups #[230, 259, 290, 359, 419, 476 ... ] time when player lvl up
+player_slot
+```
+
+
+
 ##Tips
 4-5 keys are enough
