@@ -18,7 +18,7 @@ class Dota2ArenaCourier::Team
       xpm += p.xpm; gpm += p.gpm; net_worth += p.net_worth
       last_hits += p.last_hits; denies += p.denies
       level += p.level
-      add_levels(lvl_ups, player_convert_levels(p.level_ups))
+      add_levels(lvl_ups, player_convert_levels(p.lvl_ups))
     end
 
     @kills = kills; @deaths = deaths; @assists = assists

@@ -20,7 +20,7 @@ describe Dota2ArenaCourier::Player do
       expect(player.xpm).to eq 717
       expect(player.gpm).to eq 735
       expect(player.level).to eq 20
-      expect(player.level_ups).to eq [230, 259, 290, 359, 419, 476, 548, 653, 840, 930, 1014, 1309, 1310, 1468, 1599, 1744, 1841, 1917, 1953]
+      expect(player.lvl_ups).to eq [230, 259, 290, 359, 419, 476, 548, 653, 840, 930, 1014, 1309, 1310, 1468, 1599, 1744, 1841, 1917, 1953]
     end
   end
 end

@@ -1,7 +1,7 @@
 class Dota2ArenaCourier::Player
 
   attr_reader :account_id, :hero_id, :items, :kills, :deaths, :assists, :leaver_status, :net_worth,
-              :last_hits, :denies, :gpm, :xpm, :level, :level_ups, :player_slot
+              :last_hits, :denies, :gpm, :xpm, :level, :lvl_ups, :player_slot
 
   def initialize(json)
     @json = json
@@ -22,7 +22,7 @@ class Dota2ArenaCourier::Player
     @gpm = @json['gold_per_min']
     @xpm = @json['xp_per_min']
     @level = @json['level']
-    @level_ups = set_level_ups(@json)
+    @lvl_ups = set_level_ups(@json)
     @json = nil
     self
   end
