@@ -4,7 +4,7 @@ class Dota2ArenaCourier::Fetcher
 
   def get_matches(match_ids)
     urls = match_ids.map { |id| match_url(id)}
-    responses = fetch(urls, 50)
+    responses = fetch(urls, Dota2ArenaCourier.configuration.concurrency)
     responses.map do |r|
       begin
         JSON.parse(r.response.body)

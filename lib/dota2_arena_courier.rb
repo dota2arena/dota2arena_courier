@@ -10,6 +10,7 @@ module Dota2ArenaCourier
 
   with_configuration do
     has :api_keys, classes: Array, default: ['52631328E26C1399587CBB0BB1E735F6']
+    has :concurrency, classes: Fixnum, default: 25
   end
 
   def self.dota2_api_key
