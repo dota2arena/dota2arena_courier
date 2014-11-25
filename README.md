@@ -18,6 +18,7 @@ Add config to initializers
 Dota2ArenaCourier.configure do |config|
     #Round robin api key selector
     config.api_keys = ['xxx', 'yyy', 'zzz'] #Add as many keys as you want
+    config.concurrency = 25 #is the default
 end
 ```
 
@@ -65,5 +66,3 @@ history_1 = Dota2ArenaCourier.get_player_history_full('account_id', {all: true})
 
 ##Tips
 4-5 keys are enough
-
-Typhous concurrency is set to 25
